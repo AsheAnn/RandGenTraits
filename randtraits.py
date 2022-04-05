@@ -3,28 +3,17 @@ import pandas as pd
 import os
 
 
-def initIndex(name, seed):
-    index = []
-    for i in range(0, seed):
-        index.append(("int" + f"{i}"))
-    n = f"{name}"
-    dp = {n: index}
-    return dp
-
-
 def trait(name, count, seed):
     index = []
     for i in range(0, seed):
         traitIndex = rd.randint(0, count - 1)
         index.append(traitIndex)
     rd.shuffle(index)
-    n = f"{name}"
-    dp = {n: index}
+    dp = {f"{name}": index}
     return dp
 
 
 if __name__ == "__main__":
-    tn = initIndex("int", 3333)
     t0 = trait("Body", 13, 3333)
     t1 = trait("Hand", 6, 3333)
     t2 = trait("Skin", 5, 3333)
