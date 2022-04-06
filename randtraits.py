@@ -13,6 +13,10 @@ def trait(name, count, seed):
     return dp
 
 
+def importjson():
+    df = pd.read_json("../trait/json/trait.json")
+    return df
+
 if __name__ == "__main__":
     t0 = trait("Body", 13, 3333)
     t1 = trait("Hand", 6, 3333)
