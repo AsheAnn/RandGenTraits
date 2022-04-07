@@ -1,8 +1,6 @@
-/TD
-/__pycache__
-/csv
-/csv2
-/old
-/json
+TD/
+__pycache__/
+csv2/
+old/
 .DS_Store
 

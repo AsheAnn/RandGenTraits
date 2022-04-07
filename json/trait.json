@@ -1,0 +1,24 @@
+{
+  "traits": [
+    { "name": "Body", "count": 9, "seed": 1000 },
+    { "name": "Hand", "count": 13, "seed": 1000 },
+    { "name": "Skin", "count": 6, "seed": 1000 },
+    { "name": "Hair", "count": 21, "seed": 1000 },
+    { "name": "Body", "count": 13, "seed": 1000 },
+    { "name": "Hand", "count": 6, "seed": 1000 },
+    { "name": "Skin", "count": 5, "seed": 1000 },
+    { "name": "Hair", "count": 6, "seed": 1000 },
+    { "name": "Face", "count": 8, "seed": 1000 },
+    { "name": "Ears", "count": 8, "seed": 1000 },
+    { "name": "Nose", "count": 3, "seed": 1000 },
+    { "name": "Eyes", "count": 24, "seed": 1000 },
+    { "name": "Eyesbrow", "count": 10, "seed": 1000 },
+    { "name": "Neck", "count": 4, "seed": 1000 },
+    { "name": "Mouth", "count": 15, "seed": 1000 },
+    { "name": "BodyGear", "count": 4, "seed": 1000 },
+    { "name": "HeadGear", "count": 4, "seed": 1000 },
+    { "name": "FaceGearFront", "count": 3, "seed": 1000 },
+    { "name": "FaceGearBack", "count": 5, "seed": 1000 },
+    { "name": "Background", "count": 8, "seed": 1000 }
+  ]
+}

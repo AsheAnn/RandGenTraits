@@ -1,6 +1,7 @@
 import random as rd
 import pandas as pd
 import os
+import json
 
 
 def trait(name, count, seed):
@@ -13,9 +14,11 @@ def trait(name, count, seed):
     return dp
 
 
-def importjson():
-    df = pd.read_json("../trait/json/trait.json")
-    return df
+def loadjson(file):
+    with open(file) as f:
+        data = json.load(f)
+    return data
+
 
 if __name__ == "__main__":
     t0 = trait("Body", 13, 3333)
@@ -34,11 +37,11 @@ if __name__ == "__main__":
     t13 = trait("FaceGearFront", 3, 3333)
     t14 = trait("FaceGearBack", 5, 3333)
     t15 = trait("Background", 8, 3333)
-
-    ts1 = t0 | t1 | t2 | t3 | t4 | t5 | t6 | t7
-    ts2 = t8 | t9 | t10 | t11 | t12 | t13 | t14 | t15
-    tsall = ts1 | ts2
-
-    df = pd.DataFrame(data=tsall).drop_duplicates(keep=False)
-    os.makedirs("../trait/csv2", exist_ok=True)
-    df.to_csv("../trait/csv2/out2.csv")
+    print(t0 | t1)
+    # ts1 = t0 | t1 | t2 | t3 | t4 | t5 | t6 | t7
+    # ts2 = t8 | t9 | t10 | t11 | t12 | t13 | t14 | t15
+    # tsall = ts1 | ts2
+    #
+    # df = pd.DataFrame(data=tsall).drop_duplicates(keep=False)
+    # os.makedirs("../trait/csv2", exist_ok=True)
+    # df.to_csv("../trait/csv2/out2.csv")
