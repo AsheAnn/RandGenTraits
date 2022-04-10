@@ -1,6 +1,6 @@
 {
   "traits": [
-    { "name": "Body", "count": 13, "seed": 1000 },
+    { "name": "Body", "count": 13, "seed": 1000},
     { "name": "Hand", "count": 6, "seed": 1000 },
     { "name": "Skin", "count": 5, "seed": 1000 },
     { "name": "Hair", "count": 6, "seed": 1000 },

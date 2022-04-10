@@ -4,38 +4,39 @@ import os
 import json
 
 
-def randomTrait(name, count, seed):
+def random_trait(name, count, seed):
     index = []
     for i in range(0, seed):
-        traitIndex = rd.randint(0, count - 1)
-        index.append(traitIndex)
+        trait_index = rd.randint(0, count - 1)
+        index.append(trait_index)
     rd.shuffle(index)
-    randResult = {f"{name}": index}
-    return randResult
+    rand_result = {f"{name}": index}
+    return rand_result
 
 
-def generateTraitsList():
+def generate_traits_list():
     with open("../trait/json/trait.json") as f:
         data = json.load(f)
         traits = data["traits"]
-    nullList = []
+    new_list = []
     for j in range(0, len(traits)):
         name = traits[j]["name"]
         count = traits[j]["count"]
         seed = traits[j]["seed"]
-        allTraits = randomTrait(name, count, seed)
-        nullList.append(allTraits)
+        all_traits = random_trait(name, count, seed)
+        new_list.append(all_traits)
     result = {}
-    for dic in nullList:
+    for dic in new_list:
         result.update(dic)
     return result
 
 
-def convertToCsv(allList):
-    df = pd.DataFrame(data=allList).drop_duplicates(keep=False)
-    os.makedirs("../trait/csv", exist_ok=True)
-    df.to_csv("../trait/csv/out.csv")
+def convertToCsv(alist):
+    df = pd.DataFrame(data=alist).drop_duplicates(keep=False)
+    return df
+    # os.makedirs("../trait/csv", exist_ok=True)
+    # df.to_csv("../trait/csv/out.csv")
 
 
 if __name__ == "__main__":
-    convertToCsv(generateTraitsList())
+    print(generate_traits_list())

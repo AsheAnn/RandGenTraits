@@ -1,0 +1,42 @@
+{
+  "traits": [
+    {
+      "name": "Body",
+      "count": 6,
+      "seed": 1000,
+      "trait": [
+        { "index": 0, "name": "a", "percent": 20 },
+        { "index": 1, "name": "v", "percent": 1 },
+        { "index": 2, "name": "dd", "percent": 20 },
+        { "index": 3, "name": "ss", "percent": 20 },
+        { "index": 4, "name": "sss", "percent": 29 },
+        { "index": 5, "name": "lsad", "percent": 10 }
+      ]
+    },
+    {
+      "name": "Hand",
+      "count": 6,
+      "seed": 1000,
+      "trait": [
+        { "index": 0, "name": "an", "percent": 20 },
+        { "index": 1, "name": "ca", "percent": 10 },
+        { "index": 2, "name": "ba", "percent": 25 },
+        { "index": 3, "name": "dda", "percent": 15 },
+        { "index": 4, "name": "lks", "percent": 20 },
+        { "index": 5, "name": "x", "percent": 10 }
+      ]
+    },
+    {
+      "name": "Skin",
+      "count": 5,
+      "seed": 1000,
+      "trait": [
+        { "index": 0, "name": "qqw", "percent": 20 },
+        { "index": 1, "name": "qxq", "percent": 10 },
+        { "index": 2, "name": "qwq", "percent": 25 },
+        { "index": 3, "name": "qqi", "percent": 25 },
+        { "index": 4, "name": "qoq", "percent": 20 }
+      ]
+    }
+  ]
+}
