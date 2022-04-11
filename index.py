@@ -6,7 +6,7 @@ index = []
 for i in range(0, 10000):
     s = f"{i}"
     idx = s.zfill(5)
-    index.append(idx)
+    index.append("int" + idx)
 t = {"Int":index}
 df = pd.DataFrame(t)
 os.makedirs("../trait/csv", exist_ok=True)
