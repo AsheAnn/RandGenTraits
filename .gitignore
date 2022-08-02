@@ -1,6 +1,7 @@
 TD/
 __pycache__/
 csv2/
+csv
 old/
 .DS_Store
 
