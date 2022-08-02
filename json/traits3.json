@@ -7,20 +7,11 @@
       "type": [
         {
           "index": 0,
-          "name": "t1",
           "percent": 30,
-          "color": [
-            { "index": 1, "name": "a", "percent": 20 },
-            { "index": 2, "name": "v", "percent": 10 },
-            { "index": 3, "name": "dd", "percent": 20 },
-            { "index": 4, "name": "ss", "percent": 20 },
-            { "index": 5, "name": "sss", "percent": 20 },
-            { "index": 6, "name": "lsad", "percent": 10 }
-          ]
+          "color": [{ "index": 0, "name": "a1", "percent": 100 }]
         },
         {
           "index": 1,
-          "name": "t2",
           "percent": 70,
           "color": [
             { "index": 1, "name": "a1", "percent": 15 },
@@ -29,6 +20,50 @@
             { "index": 4, "name": "ssxa", "percent": 25 },
             { "index": 5, "name": "sssbbv", "percent": 20 }
           ]
+        }
+      ]
+    },
+    {
+      "name": "bg",
+      "count": 3,
+      "seed": 100,
+      "type": [
+        {
+          "index": 0,
+          "percent": 30,
+          "color": [{ "index": 0, "name": "a1", "percent": 100 }]
+        },
+        {
+          "index": 1,
+          "percent": 50,
+          "color": [{ "index": 0, "name": "a2", "percent": 100 }]
+        },
+        {
+          "index": 2,
+          "percent": 20,
+          "color": [{ "index": 0, "name": "a3", "percent": 100 }]
+        }
+      ]
+    },
+    {
+      "name": "cc",
+      "count": 3,
+      "seed": 100,
+      "type": [
+        {
+          "index": 0,
+          "percent": 30,
+          "color": [{ "index": 0, "name": "aa1", "percent": 100 }]
+        },
+        {
+          "index": 1,
+          "percent": 50,
+          "color": [{ "index": 0, "name": "cca2", "percent": 100 }]
+        },
+        {
+          "index": 2,
+          "percent": 20,
+          "color": [{ "index": 0, "name": "aaa3", "percent": 100 }]
         }
       ]
     }
