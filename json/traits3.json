@@ -2,17 +2,22 @@
   "traits": [
     {
       "name": "Body",
-      "count": 2,
-      "seed": 100,
+      "count": 3,
+      "seed": 1000,
       "type": [
         {
           "index": 0,
           "percent": 30,
-          "color": [{ "index": 0, "name": "a1", "percent": 100 }]
+          "color": [
+            { "index": 0, "name": "a1", "percent": 25 },
+            { "index": 1, "name": "1a1", "percent": 25 },
+            { "index": 2, "name": "1ea1", "percent": 25 },
+            { "index": 3, "name": "1eea1", "percent": 25 }
+          ]
         },
         {
           "index": 1,
-          "percent": 70,
+          "percent": 40,
           "color": [
             { "index": 1, "name": "a1", "percent": 15 },
             { "index": 2, "name": "v", "percent": 10 },
@@ -20,13 +25,24 @@
             { "index": 4, "name": "ssxa", "percent": 25 },
             { "index": 5, "name": "sssbbv", "percent": 20 }
           ]
+        },
+        {
+          "index": 2,
+          "percent": 30,
+          "color": [
+            { "index": 1, "name": "a", "percent": 15 },
+            { "index": 2, "name": "v", "percent": 10 },
+            { "index": 3, "name": "djd", "percent": 30 },
+            { "index": 4, "name": "sxa", "percent": 25 },
+            { "index": 5, "name": "ssb", "percent": 20 }
+          ]
         }
       ]
     },
     {
       "name": "bg",
       "count": 3,
-      "seed": 100,
+      "seed": 1000,
       "type": [
         {
           "index": 0,
@@ -48,7 +64,7 @@
     {
       "name": "cc",
       "count": 3,
-      "seed": 100,
+      "seed": 1000,
       "type": [
         {
           "index": 0,

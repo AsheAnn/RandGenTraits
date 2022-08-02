@@ -50,9 +50,9 @@ def relatvie_trait_shuffle():
                 c_percent = color[k]["percent"]
                 relatvie_list.extend([{
                     "t_index":
-                    int(index),
+                    index,
                     "c_index":
-                    int(c_index),
+                    c_index,
                     "traits_name":
                     c_name,
                     "score":
@@ -91,7 +91,7 @@ def generate_traits_list(result):
         w.append(pd.DataFrame(all_traits[i]))
     df = pd.concat(w, axis=1)
     os.makedirs("./csv", exist_ok=True)
-    df.to_csv("./csv/out_4.csv")
+    df.to_csv("./csv/out_4.csv", index=False)
 
 
 if __name__ == "__main__":
