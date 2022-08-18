@@ -34,10 +34,10 @@ def relatvie_trait_shuffle():
     with open("./json/traits3.json") as f:
         data = json.load(f)
         traits = data["traits"]
+        seed = data["seed"]
         relative_array = []
     for j in range(0, len(traits)):
         count = traits[j]["count"]
-        seed = traits[j]["seed"]
         name = traits[j]["name"]
         relatvie_list = []
         for i in range(0, count):
@@ -78,20 +78,17 @@ def generate_traits_list(result):
             trait_name.append(result[k][v]["traits_name"])
             score.append(result[k][v]["score"])
         col_1 = {f"{k}": trait_id}
-        col_2 = {
-            f"{k}"
-            "_color": color_id
-        }
+        col_2 = {f"{k}""_color": color_id}
         col_3 = {"name": trait_name}
         col_4 = {"score": score}
         newa = col_1 | col_2 | col_3 | col_4
         all_traits.append(newa)
     w = []
     for i in range(0, len(all_traits)):
-        w.append(pd.DataFrame(all_traits[i]))
+        w.append(pd.DataFrame(all_traits[i]).astype("string"))
     df = pd.concat(w, axis=1)
     os.makedirs("./csv", exist_ok=True)
-    df.to_csv("./csv/out_4.csv", index=False)
+    df.to_csv("./csv/out_5.csv", index=False)
 
 
 if __name__ == "__main__":
