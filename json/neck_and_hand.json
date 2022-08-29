@@ -1,0 +1,317 @@
+{
+  "seed": 1000,
+  "traits": [
+    {
+      "name": "Hand",
+      "count": 27,
+      "trait": [
+        {
+          "index": 0,
+          "percent": 20
+        },
+        {
+          "index": 1,
+          "percent": 3
+        },
+        {
+          "index": 2,
+          "percent": 3
+        },
+        {
+          "index": 3,
+          "percent": 2
+        },
+        {
+          "index": 4,
+          "percent": 4
+        },
+        {
+          "index": 5,
+          "percent": 4
+        },
+        {
+          "index": 6,
+          "percent": 2
+        },
+        {
+          "index": 7,
+          "percent": 3.8
+        },
+        {
+          "index": 8,
+          "percent": 5
+        },
+        {
+          "index": 9,
+          "percent": 1
+        },
+        {
+          "index": 10,
+          "percent": 4
+        },
+        {
+          "index": 11,
+          "percent": 3.8
+        },
+        {
+          "index": 12,
+          "percent": 1
+        },
+        {
+          "index": 13,
+          "percent": 3.8
+        },
+        {
+          "index": 14,
+          "percent": 4
+        },
+        {
+          "index": 15,
+          "percent": 3.8
+        },
+        {
+          "index": 16,
+          "percent": 2
+        },
+        {
+          "index": 17,
+          "percent": 3.8
+        },
+        {
+          "index": 18,
+          "percent": 1
+        },
+        {
+          "index": 19,
+          "percent": 3.8
+        },
+        {
+          "index": 20,
+          "percent": 3.8
+        },
+        {
+          "index": 21,
+          "percent": 3.8
+        },
+        {
+          "index": 22,
+          "percent": 1
+        },
+        {
+          "index": 23,
+          "percent": 2
+        },
+        {
+          "index": 24,
+          "percent": 1
+        },
+        {
+          "index": 25,
+          "percent": 3.8
+        },
+        {
+          "index": 26,
+          "percent": 5.8
+        }
+      ]
+    },
+    {
+      "name": "Neck",
+      "count": 48,
+      "trait": [
+        {
+          "index": 0,
+          "percent": 10
+        },
+        {
+          "index": 1,
+          "percent": 2
+        },
+        {
+          "index": 2,
+          "percent": 2
+        },
+        {
+          "index": 3,
+          "percent": 2
+        },
+        {
+          "index": 4,
+          "percent": 2
+        },
+        {
+          "index": 5,
+          "percent": 2
+        },
+        {
+          "index": 6,
+          "percent": 2
+        },
+        {
+          "index": 7,
+          "percent": 2
+        },
+        {
+          "index": 8,
+          "percent": 2
+        },
+        {
+          "index": 9,
+          "percent": 2
+        },
+        {
+          "index": 10,
+          "percent": 2
+        },
+        {
+          "index": 11,
+          "percent": 5
+        },
+        {
+          "index": 12,
+          "percent": 2
+        },
+        {
+          "index": 13,
+          "percent": 2
+        },
+        {
+          "index": 14,
+          "percent": 3
+        },
+        {
+          "index": 15,
+          "percent": 2
+        },
+        {
+          "index": 16,
+          "percent": 2
+        },
+        {
+          "index": 17,
+          "percent": 1
+        },
+        {
+          "index": 18,
+          "percent": 2
+        },
+        {
+          "index": 19,
+          "percent": 2
+        },
+        {
+          "index": 20,
+          "percent": 1
+        },
+        {
+          "index": 21,
+          "percent": 2
+        },
+        {
+          "index": 22,
+          "percent": 1
+        },
+        {
+          "index": 23,
+          "percent": 2
+        },
+        {
+          "index": 24,
+          "percent": 2
+        },
+        {
+          "index": 25,
+          "percent": 2
+        },
+        {
+          "index": 26,
+          "percent": 1
+        },
+        {
+          "index": 27,
+          "percent": 2
+        },
+        {
+          "index": 28,
+          "percent": 2
+        },
+        {
+          "index": 29,
+          "percent": 1
+        },
+        {
+          "index": 30,
+          "percent": 2
+        },
+        {
+          "index": 31,
+          "percent": 2
+        },
+        {
+          "index": 32,
+          "percent": 2
+        },
+        {
+          "index": 33,
+          "percent": 2
+        },
+        {
+          "index": 34,
+          "percent": 2
+        },
+        {
+          "index": 35,
+          "percent": 2
+        },
+        {
+          "index": 36,
+          "percent": 2
+        },
+        {
+          "index": 37,
+          "percent": 2
+        },
+        {
+          "index": 38,
+          "percent": 1
+        },
+        {
+          "index": 39,
+          "percent": 2
+        },
+        {
+          "index": 40,
+          "percent": 2
+        },
+        {
+          "index": 41,
+          "percent": 2
+        },
+        {
+          "index": 42,
+          "percent": 1
+        },
+        {
+          "index": 43,
+          "percent": 2
+        },
+        {
+          "index": 44,
+          "percent": 2
+        },
+        {
+          "index": 45,
+          "percent": 2
+        },
+        {
+          "index": 46,
+          "percent": 1
+        },
+        {
+          "index": 47,
+          "percent": 2
+        }
+      ]
+    }
+  ]
+}
