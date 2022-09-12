@@ -1,6 +1,7 @@
 import os
 import json
 import random as rd
+from numpy import number
 import pandas as pd
 
 
@@ -43,7 +44,7 @@ def shuffle_relative_traits(file):
     for j in range(0, len(traits)):
         count = traits[j]["count"]
         name = traits[j]["name"]
-        relatvie_list = []
+        relative_list = []
         for i in range(0, count):
             index = traits[j]["type"][i]["index"]
             percent = traits[j]["type"][i]["percent"]
@@ -51,17 +52,20 @@ def shuffle_relative_traits(file):
             for k in range(0, len(color)):
                 c_index = color[k]["index"]
                 c_percent = color[k]["percent"]
-                relatvie_list.extend([{
+                relative_list.extend([{
                     "t_index": index,
                     "c_index": c_index,
-                }] * int(seed * percent / 100 * (c_percent / 100)))
-            rd.shuffle(relatvie_list)
-            rand_reresult = {f"{name}": relatvie_list}
+                }] * int(seed * (percent / 100) * (c_percent / 100)))
+            rd.shuffle(relative_list)
+            rand_reresult = {f"{name}": relative_list}
             relative_array.append(rand_reresult)
+        null_list = []
+        for item in relative_list:
+            null_list.append(item["t_index"])
     return array2dic(relative_array)
 
 
-def shuffle_mono_traits(file, body):
+def shuffle_mono_traits(file):
     with open(file) as f:
         data = json.load(f)
         traits = data["traits"]
@@ -78,16 +82,12 @@ def shuffle_mono_traits(file, body):
         rd.shuffle(mono_list)
         rand_result = {f"{name}": mono_list}
         new_list.append(rand_result)
-    print(len(new_list[0]["Hand"]))
-    print(len(new_list[1]["Neck"]))
-    print(new_list[0]["Hand"])
-    print(new_list[1]["Neck"])
-    final_list = []
-    for k in range(len(body)):
-        if body[k] == 0:
-            new_list[0]["Hand"][k] = 0
-            new_list[1]["Neck"][k] = 0
-        print(new_list)
+    # final_list = []
+    # for k in range(len(body)):
+    #     if body[k] == 0:
+    #         new_list[0]["Hand"][k] = 0
+    #         new_list[1]["Neck"][k] = 0
+    #     print(new_list)
     return new_list
 
 
@@ -138,10 +138,32 @@ def generate_traits_list(result):
         w.append(pd.DataFrame(all_traits[i]).astype("string"))
     df = pd.concat(w, axis=1)
     os.makedirs("./csv", exist_ok=True)
-    df.to_csv("./csv/out_5.csv", index=False)
+    df.to_csv("./csv/out_6.csv", index=False)
+
+
+def generate_extract_list(result):
+    # all_traits = []
+    # for k in result:
+    #     trait_id = []
+    #     color_id = []
+    #     for v in range(0, len(result[k])):
+    #         trait_id.append(result[k][v]["t_index"])
+    #     col_1 = {f"{k}": trait_id}
+    #     col_2 = {
+    #         f"{k}"
+    #         "_color": color_id
+    #     }
+    #     newa = col_1 | col_2
+    #     all_traits.append(newa)
+    w = []
+    for i in range(0, len(result)):
+        w.append(pd.DataFrame(result[i]).astype("string"))
+    df = pd.concat(w, axis=1)
+    os.makedirs("./csv", exist_ok=True)
+    df.to_csv("./csv/extra.csv", index=False)
 
 
 if __name__ == "__main__":
     # generate_traits_list(relatvie_trait_shuffle())
-    body = [0, 2, 3, 0, 4, 1, 5, 2, 3, 5]
-    shuffle_mono_traits("./json/neck_and_hand.json", body)
+    generate_extract_list(shuffle_mono_traits("./json/neck_and_hand.json"))
+    generate_traits_list(shuffle_relative_traits("./json/body3.json"))

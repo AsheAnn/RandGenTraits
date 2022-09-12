@@ -1,0 +1,17 @@
+{
+  "name": "randgentraits",
+  "version": "1.0.0",
+  "description": "- Random value - Generate flexible traits and shuffle array  - Export the traits of scores  - Export to csv",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@ashe:AsheAnn/RandGenTraits.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
