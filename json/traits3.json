@@ -1,12 +1,12 @@
 {
-  "seed": 1000,
+  "seed": 10000,
   "traits": [
     {
       "name": "Skin",
       "count": 1,
       "type": [
         {
-          "index": 0,
+          "index": 2,
           "percent": 100,
           "color": [
             {

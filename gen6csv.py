@@ -138,32 +138,19 @@ def generate_traits_list(result):
         w.append(pd.DataFrame(all_traits[i]).astype("string"))
     df = pd.concat(w, axis=1)
     os.makedirs("./csv", exist_ok=True)
-    df.to_csv("./csv/out_6.csv", index=False)
+    df.to_csv("./csv/Body_Skin2.csv", index=False)
 
 
 def generate_extract_list(result):
-    # all_traits = []
-    # for k in result:
-    #     trait_id = []
-    #     color_id = []
-    #     for v in range(0, len(result[k])):
-    #         trait_id.append(result[k][v]["t_index"])
-    #     col_1 = {f"{k}": trait_id}
-    #     col_2 = {
-    #         f"{k}"
-    #         "_color": color_id
-    #     }
-    #     newa = col_1 | col_2
-    #     all_traits.append(newa)
     w = []
     for i in range(0, len(result)):
         w.append(pd.DataFrame(result[i]).astype("string"))
     df = pd.concat(w, axis=1)
     os.makedirs("./csv", exist_ok=True)
-    df.to_csv("./csv/extra.csv", index=False)
+    df.to_csv("./csv/extra2.csv", index=False)
 
 
 if __name__ == "__main__":
     # generate_traits_list(relatvie_trait_shuffle())
     generate_extract_list(shuffle_mono_traits("./json/neck_and_hand.json"))
-    generate_traits_list(shuffle_relative_traits("./json/body3.json"))
+    generate_traits_list(shuffle_relative_traits("./json/body5.json"))

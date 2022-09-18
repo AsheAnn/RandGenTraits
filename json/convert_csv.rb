@@ -2,7 +2,7 @@
 
 require 'csv'
 
-table = CSV.parse(File.read(Dir.home + '/tmp/RandGenTraits/csv/00.csv'), headers: true)
+table = CSV.parse(File.read(Dir.home + '/tmp/RandGenTraits/csv/Body01.csv'), headers: true)
 
 index_percent = []
 [*1..34].each do |i|

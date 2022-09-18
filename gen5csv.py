@@ -88,7 +88,7 @@ def generate_traits_list(result):
         w.append(pd.DataFrame(all_traits[i]).astype("string"))
     df = pd.concat(w, axis=1)
     os.makedirs("./csv", exist_ok=True)
-    df.to_csv("./csv/out_5.csv", index=False)
+    df.to_csv("./csv/Traits_skin2.csv", index=False)
 
 
 if __name__ == "__main__":
